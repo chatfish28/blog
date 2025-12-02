@@ -1,12 +1,20 @@
-baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "Kaldi"
+# hugo.toml
+
+theme = "hugo-book" 
+
+baseURL = "/" 
+languageCode = "zh-cn" 
+languageLang = "zh-cn"
+title = "我的 Wiki 文档站" 
 
 # RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
-images = ["img/og-image.jpg"]
+  # 啟用自動深色模式和切換按鈕
+  enableDarkMode = true 
+  
+  images = ["img/og-image.jpg"]
+
+  # Book Theme 的其他參數（可選）
+  BookPortableLinks = true

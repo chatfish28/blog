@@ -3,6 +3,7 @@
   YARN_VERSION = "1.22.17"
   NODE_VERSION = "18"
   HUGO_BUILD_TAGS = "extended"
+  HUGO_VERSION = "0.121.2"
 
 [build]
   command = "cp -r themes/ site/themes && yarn build" 
@@ -14,9 +15,6 @@
 [dev]
   framework = "hugo"
   targetPort = 3000
-
-[context.production.environment]
-  HUGO_VERSION = "0.121.2"
 
 [[plugins]]
   package = "netlify-plugin-cypress"

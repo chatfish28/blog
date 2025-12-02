@@ -14,13 +14,6 @@
   framework = "hugo"
   targetPort = 3000
 
-# ----------------------------------------------------------------
-# 【最终关键修正】Hugo 环境变量必须设置在这里，以确保 Extended 版本生效
-# ----------------------------------------------------------------
-[context.production.environment]
-  HUGO_VERSION = "0.121.2"
-  HUGO_BUILD_TAGS = "extended" # <--- 🚨 新增：确保安装 Extended 版本
-
 [[plugins]]
   package = "netlify-plugin-cypress"
 
